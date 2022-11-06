@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Slambook</title>
+    <style>
+        body {
+    margin: 50px;
+    font-weight: 400;
+    background-color: #01A66F;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color: #FFCD;
+    padding: 40px 40px 40px 40px;
+    border-radius: 12px;
+  }
+
+  .tabs__label {
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+
+  .tabs__radio {
+    display: none;
+  }
+
+  .tabs__content {
+    order: 1;
+    width: 100%;
+    line-height: 2;
+    font-size: 0.9em;
+    display: none;
+    font-family: 'Satisfy', cursive;
+  }
+
+  .tabs__radio:checked + .tabs__label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 4px solid #009578;
+    font-weight: 700;
+    font-size: 13;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+  }
+
+  .image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 400px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+
+  .image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-grid-col-2 {
+    grid-column: span 2;
+  }
+
+  .image-grid-row-2 {
+    grid-row: span 2;
+  }
+
+  h1 {
+    font-size: 80px
+  }
+
+  h2 {
+    font-size: 30px
+  }
+    </style>
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs" id="tab1" checked>
+        <label for="tab1" class="tabs__label">Home</label>
+        <div class="tabs__content">
+            <center>
+                <br>
+            <h2>Mabuhay!</h2>
+            <h1>Welcome to Eder's Slambook</h1> <br>
+            <p>Explore the website to know more about me</p>
+            </center>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab2">
+        <label for="tab2" class="tabs__label">About Me</label>
+        <div class="tabs__content">
+            <center>
+            <br>
+            <strong>Name:</strong> Ederlie Rose A. Leoncio <br>
+            <strong>Nickname:</strong> Eder <br>
+            <strong>Age:</strong> 20 years old <br>
+            <strong>Birthday:</strong> September 11, 2002 <br>
+            <strong>Zodiac Sign:</strong> Virgo <br>
+            </center>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab3">
+        <label for="tab3" class="tabs__label">Favorites</label>
+        <div class="tabs__content">
+            <center>
+                <br>
+            <strong>Color:</strong> Green <br>
+            <strong>Holiday:</strong> Christmas <br>
+            <strong>Food:</strong> Ramen <br>
+            <strong>Smell:</strong> Bamboo<br>
+            <strong>Subject:</strong> Highschool Math<br>
+            <strong>Book:</strong> Harry Potter Series<br>
+                <br>
+            <strong>Celebrity:</strong> Keanu Reeves<br>
+            <strong>Song:</strong> Sugarplum Elegy by NIKI<br>
+            <strong>Artist:</strong> NIKI<br>
+            <strong>TV Show:</strong> The Good Place<br>
+            <strong>Sport:</strong> Badminton<br>
+            <strong>Game:</strong> Cafe Land<br>
+            <strong>Hobby:</strong> Museum Hopping<br>
+            </center>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab4">
+        <label for="tab4" class="tabs__label">School</label>
+        <div class="tabs__content">
+            <center>
+                <br>
+            <strong>Preschool:</strong> King David Learning Center <br><br>
+            <strong>Elementary:</strong> Tañong Elementary School <br><br>
+            <strong>High School:</strong> University of the East <br><br>
+            <strong>College:</strong> Polytechnic University of the Philippines <br> 
+            </center>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab5">
+        <label for="tab5" class="tabs__label">Gallery</label>
+        <div class="tabs__content">
+            <div class="image-grid">
+                <img src="images/Kinder Recognition.png">
+                <img src="images/At Jollibee.jpg">
+                <img src="images/w papa.jpg">
+                <img src="images/Girls Scout.png">
+                <img src="images/Star City.jpg">
+                <img src="images/Grade 6 Recognition.jpg">
+                <img src="images/family.jpg">
+                <img src="images/19th.jpg">
+                <img src="images/luneta.jpg">
+                <img src="images/w friends.jpg">
+                <img src="images/batangas.jpg">
+                <img src="images/antipolo.jpg">
+                <img src="images/bgc.jpg">
+                <img src="images/fine arts.jpg">
+                <img src="images/fine arts2.jpg"> 
+            </div>
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs" id="tab6">
+        <label for="tab6" class="tabs__label">Contact Me</label>
+        <div class="tabs__content">
+            <center>
+                <br>
+            <h3>Hello guys! <br>If you want to reach me, here are my contacts.</h3> <br>
+            <strong>Facebook:</strong><a href="https://www.facebook.com/ederlierose">Ederlie Rose Leoncio</a> <br>
+            <strong>Instagram:</strong> <a href="https://www.instagram.com/ederlierose/">@ederlierose</a> <br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ederlie-rose-leoncio-6a05aa21a/">Ederlie Rose Leoncio</a><br>
+            <strong>Github:</strong> <a href="https://github.com/spadedev">Ederlie Rose Leoncio</a> <br>
+            <strong>Email:</strong> <a href ="mailto:ederlierose11@gmail.com">ederlierose11@gmail.com</a> <br>
+            </center>
+        </div>
+      </div>
+</body>
+</html>
